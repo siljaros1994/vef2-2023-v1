@@ -1,5 +1,7 @@
 # Vefforritun 2 2023, verkefni 1: Okkar eigin kennsluskrá
 
+[Kynning í fyrirlestri](https://youtu.be/Mjrug2-LGfk).
+
 ## Markmið
 
 - Upprifjun og notkun á verkfærum og tólum úr vefforritun 1.
