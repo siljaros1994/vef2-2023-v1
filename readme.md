@@ -49,7 +49,7 @@ Eftir lestur skal útbúa HTML skrár sem birta gögnin. Þær skulu vera í mö
 
 Í verkefni skal skrifa test með [Jest](https://jestjs.io/) sem athugar hvort forritið virki eins og er skilgreint er að ofan.
 
-Allar skrár með kóða skulu hafa test og line coverage skal vera a.m.k. 80% í heildina. Þetta á við node.js kóða, ekki er krafa um að skrifa test fyrir kóða á framenda.
+Allar skrár með kóða skulu hafa test og line coverage skal vera a.m.k. 80% í heildina. Þetta á við node.js kóða, ekki þarf að telja með þann kóða sem keyrður er úr CLI/gegnum `build` scriptu. Ekki er krafa um að skrifa test fyrir kóða á framenda.
 
 Þar sem coverage gögn eru skrifuð í `coverage/` möppu skal hunsa þær með `.gitignore` skrá.
 
