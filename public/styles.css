@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  :root {
+    --font-base-body-px: 16px;
+    --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue';
+    --spacing: 1rem;
+    --max-width: 1200px;
+  
+    --color-link: #007bff;
+  }
+  
+  html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-size: var(--font-base-body-px);
+    font-family: var(--font-family);
+    overflow-y: scroll;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  a {
+    color: var(--color-link);
+  }
+
+  h1 {
+    text-align: center; /* Center the text */
+    font-size: 38px; /* Increase the font size */
+    margin-bottom: 1rem; /* Add a bottom margin */
+    color: #010101; /* Change the text color */
+    font-weight: bold; /* Make the text bold */
+  }  
+  
+  /* Layout */
+  
+  .layout {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing);
+  
+    margin: 0 auto;
+    padding: var(--spacing);
+    width: 100%;
+  
+    max-width: var(--max-width);
+    min-height: 100vh;
+  }
+  
+  .layout__header {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing);
+  }
+  
+  .layout__main {
+    flex: 1;
+  }
+  
+  .layout__footer {
+    border-top: 1px solid #333;
+    padding: var(--spacing) 0;
+  }
+  
+  header {
+background-color: #f2f2f2;
+padding: 20px;
+text-align: center;
+}
+
+nav {
+background-color: #333333;
+color: white;
+padding: 10px;
+}
+
+nav ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+}
+
+header {
+background-color: #f2f2f2;
+padding: 20px;
+text-align: center;
+}
+  
+nav {
+background-color: #333333;
+color: white;
+padding: 10px;
+}
+  
+nav ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+}
+
+nav li {
+float: left;
+}
+    
+nav a {
+color: white;
+text-decoration: none;
+padding: 10px;
+font-size: 25px; /* Increase the font size */
+display: block;
+}
+    
+nav a:hover {
+background-color: #145917;
+}
+    
+section {
+margin: 20px;
+}
+
+table {
+width: 100%;
+border-collapse: collapse;
+}
+      
+th, td {
+border: 1px solid black;
+padding: 8px;
+text-align: left;
+}
+        
+th {
+background-color: #f2f2f2;
+}
+        
+footer {
+background-color: #f2f2f2;
+padding: 10px;
+text-align: center;
+}
+
+/* Specific styles */
+
+/* Hagfræðideild */
+.hagfraedi-table td {
+  background-color: #f5f5dc;
+  }
+  
+  /* Iðnaðarverkfræði-, vélaverkfræði- og tölvunarfræðideild */
+  .ivt-table td {
+  background-color: #87cefa;
+  }
+  
+  /* Læknadeild */
+  .laeknadeild-table td {
+  background-color: #90ee90;
+  }
