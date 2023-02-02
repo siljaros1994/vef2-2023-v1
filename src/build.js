@@ -6,6 +6,7 @@ import { direxists, readFile } from '../lib/file.js';
 import { parseCSV } from '../lib/parser.js';
 
 const folderPath = 'C:/Users/silja/Documents/GitHub/vef2-2023-v1/data';
+
 const csvFiles = [
   'hagfraedi.csv',
   'islenska.csv',
@@ -57,21 +58,24 @@ async function main() {
         };
 
         results.push(result);
-        const filepath = join(OUTPUT_DIR, filename);
-        const template = statsTemplate(result);
+        const filepath = join(OUTPUT_DIR, filename, 'index.html');
+        console.log(`Writing HTML to: ${filepath}`);
+        const template = indexTemplate(results);
         await writeFile(filepath, template, { flag: 'w+' });
       }
     }
   }
 
   const filepath = join(OUTPUT_DIR, 'index.html');
+  console.log(`Writing HTML to: ${filepath}`);
   const template = indexTemplate(results);
-  fs.writeFile(
+  await writeFile(
     path.join(__dirname, '..', 'public', 'index.html'),
-    await indexTemplate(results),
+    template,
     (err) => {
       if (err) throw err;
       console.log('index.html written');
     }
   );
+  main().catch(console.error);
 }
