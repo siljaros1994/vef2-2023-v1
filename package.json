@@ -6,8 +6,8 @@
   "type": "module",
   "scripts": {
     "build": "node ./src/build.js",
-    "test": "yarn jest",
     "start": "node read.js",
+    "test": "jest",
     "dev": "browser-sync start --serveStatic ./dist --server --files ./public/styles.css ./dist/*.html"
   },
   "repository": {
@@ -32,7 +32,7 @@
     "browser-sync": "^2.27.11",
     "eslint": "^8.32.0",
     "eslint-config-prettier": "^8.6.0",
-    "jest": "^29.3.1",
+    "jest": "^29.4.1",
     "stylelint": "^14.16.1",
     "stylelint-config-sass-guidelines": "^9.0.1",
     "stylelint-config-standard": "^29.0.0"
